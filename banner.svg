@@ -1,0 +1,72 @@
+<svg width="800" height="180" viewBox="0 0 800 180" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d0d1a"/>
+      <stop offset="50%" style="stop-color:#1a0a2e"/>
+      <stop offset="100%" style="stop-color:#0a1628"/>
+    </linearGradient>
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#7c3aed"/>
+      <stop offset="50%" style="stop-color:#3b82f6"/>
+      <stop offset="100%" style="stop-color:#10b981"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Fondo -->
+  <rect width="800" height="180" rx="16" fill="url(#bg)"/>
+
+  <!-- Estrellas parpadeantes -->
+  <circle cx="40" cy="30" r="1.5" fill="#7c3aed"><animate attributeName="opacity" values="0;1;0" dur="2.1s" repeatCount="indefinite"/></circle>
+  <circle cx="120" cy="15" r="1" fill="#3b82f6"><animate attributeName="opacity" values="0;1;0" dur="1.7s" begin=".4s" repeatCount="indefinite"/></circle>
+  <circle cx="250" cy="25" r="1.5" fill="#10b981"><animate attributeName="opacity" values="0;1;0" dur="2.5s" begin=".8s" repeatCount="indefinite"/></circle>
+  <circle cx="400" cy="10" r="1" fill="#f59e0b"><animate attributeName="opacity" values="0;1;0" dur="1.9s" begin=".2s" repeatCount="indefinite"/></circle>
+  <circle cx="550" cy="20" r="1.5" fill="#ec4899"><animate attributeName="opacity" values="0;1;0" dur="2.3s" begin=".6s" repeatCount="indefinite"/></circle>
+  <circle cx="680" cy="35" r="1" fill="#7c3aed"><animate attributeName="opacity" values="0;1;0" dur="1.6s" begin="1s" repeatCount="indefinite"/></circle>
+  <circle cx="760" cy="15" r="1.5" fill="#3b82f6"><animate attributeName="opacity" values="0;1;0" dur="2s" begin=".3s" repeatCount="indefinite"/></circle>
+  <circle cx="730" cy="160" r="1" fill="#10b981"><animate attributeName="opacity" values="0;1;0" dur="2.2s" begin=".9s" repeatCount="indefinite"/></circle>
+  <circle cx="80" cy="155" r="1.5" fill="#f59e0b"><animate attributeName="opacity" values="0;1;0" dur="1.8s" begin=".5s" repeatCount="indefinite"/></circle>
+  <circle cx="320" cy="165" r="1" fill="#ec4899"><animate attributeName="opacity" values="0;1;0" dur="2.4s" begin=".7s" repeatCount="indefinite"/></circle>
+  <circle cx="480" cy="155" r="1.5" fill="#7c3aed"><animate attributeName="opacity" values="0;1;0" dur="1.5s" begin=".1s" repeatCount="indefinite"/></circle>
+  <circle cx="620" cy="160" r="1" fill="#3b82f6"><animate attributeName="opacity" values="0;1;0" dur="2s" begin=".4s" repeatCount="indefinite"/></circle>
+
+  <!-- Orbes de color flotantes -->
+  <circle cx="80" cy="90" r="55" fill="#7c3aed" opacity="0.08">
+    <animate attributeName="cy" values="90;80;90" dur="4s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="720" cy="90" r="55" fill="#3b82f6" opacity="0.08">
+    <animate attributeName="cy" values="90;100;90" dur="5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="400" cy="90" r="70" fill="#10b981" opacity="0.05">
+    <animate attributeName="r" values="70;75;70" dur="3s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Línea decorativa superior -->
+  <rect x="200" y="28" width="400" height="1" rx="1" fill="url(#textGrad)" opacity="0.4"/>
+
+  <!-- Subtítulo código -->
+  <text x="400" y="58" text-anchor="middle" font-family="'Courier New', monospace" font-size="12" fill="#3b82f6" opacity="0.7" filter="url(#glow)">&lt; arte /&gt;  +  &lt; tecnología /&gt;</text>
+
+  <!-- Nombre principal -->
+  <text x="400" y="105" text-anchor="middle" font-family="'Courier New', monospace" font-size="38" font-weight="700" fill="url(#textGrad)" filter="url(#glow)">
+    ✦  zuricraft  ✦
+    <animate attributeName="opacity" values="0.85;1;0.85" dur="3s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- Roles -->
+  <text x="400" y="135" text-anchor="middle" font-family="'Courier New', monospace" font-size="13" fill="#a78bfa" letter-spacing="2">Constructor · Animador · Dev</text>
+
+  <!-- Línea decorativa inferior -->
+  <rect x="200" y="150" width="400" height="1" rx="1" fill="url(#textGrad)" opacity="0.4"/>
+
+  <!-- Emojis tech flotando -->
+  <text x="60" y="100" font-size="20" opacity="0.6">🎮<animate attributeName="y" values="100;92;100" dur="3.5s" repeatCount="indefinite"/></text>
+  <text x="710" y="95" font-size="20" opacity="0.6">🐍<animate attributeName="y" values="95;87;95" dur="4s" begin=".5s" repeatCount="indefinite"/></text>
+  <text x="155" y="140" font-size="16" opacity="0.5">🎬<animate attributeName="y" values="140;132;140" dur="3s" begin=".3s" repeatCount="indefinite"/></text>
+  <text x="620" y="140" font-size="16" opacity="0.5">🌐<animate attributeName="y" values="140;132;140" dur="3.8s" begin=".8s" repeatCount="indefinite"/></text>
+  <text x="155" y="55" font-size="14" opacity="0.4">🗄️<animate attributeName="y" values="55;48;55" dur="4.2s" begin=".2s" repeatCount="indefinite"/></text>
+  <text x="625" y="55" font-size="14" opacity="0.4">🎨<animate attributeName="y" values="55;48;55" dur="3.2s" begin=".6s" repeatCount="indefinite"/></text>
+</svg>
